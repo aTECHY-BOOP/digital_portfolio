@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Aryan Bhosale | Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Cursor Glow -->
+<div class="cursor"></div>
+
+<!-- HERO -->
+<header class="hero">
+    <h1 class="gradient">Aryan Bhosale</h1>
+    <h2><span id="typing"></span></h2>
+    <button class="btn">View My Work</button>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about" class="fade">
+    <h2>About Me</h2>
+    <p>I build futuristic web + data science projects with performance and design in mind.</p>
+</section>
+
+<section id="projects" class="fade">
+    <h2>Projects</h2>
+
+    <div class="card glow">
+        <h3>NumPy Engine</h3>
+        <p>High-performance numerical computing toolkit.</p>
+    </div>
+
+    <div class="card glow">
+        <h3>AI Data Dashboard</h3>
+        <p>Interactive data visualization system.</p>
+    </div>
+
+</section>
+
+<section id="skills" class="fade">
+    <h2>Skills</h2>
+    <div class="skills">
+        <span>Python</span>
+        <span>NumPy</span>
+        <span>JavaScript</span>
+        <span>HTML/CSS</span>
+    </div>
+</section>
+
+<section id="contact" class="fade">
+    <h2>Contact</h2>
+    <button class="btn">Hire Me</button>
+</section>
+
+<script src="script.js"></script>
+<!-- CHATBOT BUTTON -->
+<div class="chatbot-icon" onclick="toggleChat()">💬</div>
+
+<!-- CHAT WINDOW -->
+<div class="chatbot" id="chatbot">
+    <div class="chat-header">Ask me about Aryan</div>
+    
+    <div class="chat-body" id="chatBody">
+        <div class="bot-msg">Hi! Ask me about skills, projects, or resume 👋</div>
+    </div>
+    
+    <input type="text" id="userInput" placeholder="Type a message..." onkeypress="handleKey(event)">
+</div>
+</body>
+</html>
